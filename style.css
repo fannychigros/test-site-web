@@ -34,7 +34,7 @@ nav a {
 .hero {
   background-image: url('https://via.placeholder.com/1200x300.png?text=Site+Test');
   background-size: cover;
-  color: white;
+  color: brown;
   text-align: center;
   padding: 4em 2em;
 }
