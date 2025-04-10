@@ -25,18 +25,18 @@ nav a {
   font-weight: bold;
 }
 
-.hero {
-  background-image: url('https://via.placeholder.com/1200x300.png?text=Apiculture+artisanale');
-  background-size: cover;
-  color: white;
-  padding: 4em 2em;
-  text-align: center;
-}
-
-section {
+.hero, .produits, .contact {
   padding: 2em;
   max-width: 800px;
   margin: auto;
+}
+
+.hero {
+  background-image: url('https://via.placeholder.com/1200x300.png?text=Site+Test');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 4em 2em;
 }
 
 .produit {
@@ -44,6 +44,10 @@ section {
   width: 45%;
   margin: 1em;
   text-align: center;
+}
+
+.produit img {
+  max-width: 100%;
 }
 
 footer {
