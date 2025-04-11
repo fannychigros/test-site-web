@@ -84,8 +84,14 @@
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
     margin-top: 10px;
+    gap:10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background:#f3f3f3;
+    padding:10px;
+    border-radius:5px;
   }
 
   .menu-toggle:checked + .hamburger + .nav-links {
