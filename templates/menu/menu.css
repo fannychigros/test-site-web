@@ -30,6 +30,11 @@
   flex-wrap: wrap;
 }
 
+.nav-links li {
+  border: black solid 2px;
+  border-radius: 10rem;
+}
+
 .nav-links a {
   text-decoration: none;
   color: #333;
@@ -73,8 +78,6 @@
 
   .nav-links li {
     padding: 10px 0;
-    border: black solid 2px;
-    border-radius: 10rem;
   }
 
   .nav-links a {
