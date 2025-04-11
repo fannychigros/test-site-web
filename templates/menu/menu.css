@@ -44,14 +44,20 @@
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .navbar {
-    align-items: flex-start;
+    display: flex; /* Affichage en ligne */
+    flex-direction: row; /* Alignement des éléments sur une ligne */
+    justify-content: space-between; /* Titre et burger séparés */
+    align-items: center; /* Centrer verticalement */
+  }
+
+  .logo {
+    margin-bottom: 0; /* Pas d'espace sous le logo */
   }
 
   .hamburger {
     display: block;
     font-size: 24px;
     cursor: pointer;
-    margin-left: auto;
   }
 
   .nav-links {
