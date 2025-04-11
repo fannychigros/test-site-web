@@ -40,40 +40,6 @@ header {
 h1 {
   margin: 0;
 }
-.menu-container {
-  position: relative;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 2em;
-  background: none;
-  border: none;
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  cursor: pointer;
-}
-
-/* Menu horizontal par défaut */
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  flex-wrap: wrap;
-  margin-top: 1em;
-}
-
-/* Cacher la case à cocher */
-#menu-toggle {
-  display: none;
-}
-
-.hero, .produits, .contact {
-  padding: 2em;
-  max-width: 800px;
-  margin: auto;
-}
 
 .hero {
   background-image: url('https://via.placeholder.com/1200x300.png?text=Site+Test');
@@ -136,34 +102,10 @@ section {
     margin: 0.5em 0;
   }
 
-  .produit {
-    display: block;
-    width: 90%;
-    margin: 1em auto;
-  }
-
   .hero {
     padding: 2em 1em;
     background-size: cover;
   }
 
-  .menu {
-    display: none;
-    flex-direction: column;
-    background-color: #ffcc00;
-    padding: 1em 0;
-  }
-
-  .menu a {
-    padding: 0.5em;
-  }
-
-  #menu-toggle:checked + .menu-icon + .menu {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-  }
   
 }
