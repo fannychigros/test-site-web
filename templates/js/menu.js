@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("menu-container");
 
-  fetch("menu.html")
+  fetch("/html/menu.html")
     .then((response) => response.text())
     .then((html) => {
       container.insertAdjacentHTML("beforeend", html);
