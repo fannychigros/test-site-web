@@ -1,4 +1,47 @@
-.menu-container {
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+/* Icône burger */
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffcc00;
+    padding: 1em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+/*.menu-container {
   position: relative;
 }
 
@@ -11,23 +54,23 @@
   top: 1em;
   right: 1em;
   cursor: pointer;
-}
+}*/
 
 /* Menu horizontal par défaut */
-.menu {
+/*.menu {
   display: flex;
   justify-content: center;
   gap: 1em;
   flex-wrap: wrap;
   margin-top: 1em;
 }
-
+*/
 /* Cacher la case à cocher */
-#menu-toggle {
+/*#menu-toggle {
   display: none;
-}
+}*/
 
-
+/*
 @media screen and (max-width: 768px) {
 
   .menu {
@@ -49,4 +92,4 @@
     display: block;
   }
   
-}
+}*/
