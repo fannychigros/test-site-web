@@ -64,6 +64,7 @@ section {
 }
 
 
+
 /*@media (prefers-color-scheme: dark) {
   body {
     background-color: #1e1e1e;
@@ -101,5 +102,23 @@ section {
     padding: 2em 1em;
     background-size: cover;
   }
-}
 
+  .burger {
+    display: block;
+    text-align: right;
+  }
+
+  nav.menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background-color: #ffcc00;
+    padding-bottom: 1em;
+  }
+
+  #menu-toggle:checked + .burger + nav.menu {
+    display: flex;
+  }
+  
+}
