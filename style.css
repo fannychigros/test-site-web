@@ -57,7 +57,7 @@ footer {
   margin-top: 2em;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   body {
     background-color: #1e1e1e;
     color: #f5f5f5;
@@ -76,7 +76,7 @@ footer {
     background-image: url('https://via.placeholder.com/1200x300.png?text=Site+Test+Dark');
     color: #fff;
   }
-}
+}*/
 
 @media screen and (max-width: 768px) {
   nav a {
