@@ -8,6 +8,7 @@ body {
 }
 
 header {
+  position: relative;
   background-color: #ffcc00;
   padding: 1em;
   text-align: center;
@@ -46,10 +47,12 @@ h1 {
 .menu-icon {
   display: none;
   font-size: 2em;
-  cursor: pointer;
+  background: none;
+  border: none;
   position: absolute;
-  top: 0.5em;
+  top: 1em;
   right: 1em;
+  cursor: pointer;
 }
 
 /* Menu horizontal par défaut */
