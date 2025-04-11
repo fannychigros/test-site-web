@@ -1,6 +1,8 @@
-const burger = document.getElementById('burger');
-const menu = document.getElementById('menu');
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("menu");
 
-burger.addEventListener('click', () => {
-  menu.classList.toggle('open');
+  burger.addEventListener("click", function () {
+    menu.classList.toggle("open");
+  });
 });
