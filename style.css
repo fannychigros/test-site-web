@@ -25,6 +25,47 @@ nav a {
   font-weight: bold;
 }
 
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #ffcc00;
+  padding: 1em;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+.menu-container {
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+}
+
+/* Menu horizontal par défaut */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+/* Cacher la case à cocher */
+#menu-toggle {
+  display: none;
+}
+
 .hero, .produits, .contact {
   padding: 2em;
   max-width: 800px;
@@ -103,22 +144,23 @@ section {
     background-size: cover;
   }
 
-  .burger {
-    display: block;
-    text-align: right;
-  }
-
-  nav.menu {
+  .menu {
     display: none;
     flex-direction: column;
-    align-items: center;
-    gap: 1em;
     background-color: #ffcc00;
-    padding-bottom: 1em;
+    padding: 1em 0;
   }
 
-  #menu-toggle:checked + .burger + nav.menu {
+  .menu a {
+    padding: 0.5em;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
     display: flex;
+  }
+
+  .menu-icon {
+    display: block;
   }
   
 }
