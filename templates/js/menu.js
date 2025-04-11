@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("menu-container");
 
   // Charger dynamiquement le fichier menu.html
-  fetch("https://github.com/fannychigros/test-site-web/edit/main/templates/html/menu.html")
+  fetch("https://fannychigros.github.io/test-site-web/templates/html/menu.html")
     .then((response) => response.text())
     .then((html) => {
       container.insertAdjacentHTML("beforeend", html);  // Insérer le contenu HTML dans le conteneur
