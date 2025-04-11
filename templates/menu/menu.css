@@ -46,6 +46,22 @@
   color: #007BFF;
 }
 
+.nav-links li {
+  border: black solid 2px;
+  border-radius: 10rem;
+  transition: all 0.3s ease; /* Pour une transition douce */
+}
+
+/* Changer la couleur du lien et de la bordure active */
+.nav-links a.active {
+  background-color: #007BFF; /* Couleur de fond active */
+  color: white; /* Texte blanc pour l'élément actif */
+}
+
+.nav-links li a.active {
+  border-color: #007BFF; /* Changer la couleur de la bordure quand actif */
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .navbar {

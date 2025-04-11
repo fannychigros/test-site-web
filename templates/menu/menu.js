@@ -26,4 +26,11 @@ fetch(menuPath)
       const page = link.getAttribute('href'); // ex: pages/activites.html
       link.setAttribute('href', prefix + page);
     });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      const currentPath = window.location.pathname;
+      if (link.getAttribute('href') === currentPath) {
+        link.classList.add('active');
+      }
+    });
   });
