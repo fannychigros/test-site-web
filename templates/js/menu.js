@@ -1,18 +1,25 @@
-// Charger dynamiquement le menu
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("menu-container");
 
+  // Chargement du fichier menu.html
   fetch("/html/menu.html")
     .then((response) => response.text())
     .then((html) => {
-      container.insertAdjacentHTML("beforeend", html);
+      container.insertAdjacentHTML("beforeend", html);  // Insérer le HTML de menu.html
 
-      // Ensuite activer le burger menu
+      // Vérification et activation du menu burger
       const burger = document.getElementById("burger");
       const menu = document.getElementById("menu");
 
-      burger.addEventListener("click", function () {
-        menu.classList.toggle("open");
-      });
+      if (burger && menu) {
+        burger.addEventListener("click", function () {
+          menu.classList.toggle("open");
+        });
+      } else {
+        console.error("Échec de la récupération du burger ou du menu.");
+      }
+    })
+    .catch((error) => {
+      console.error("Erreur de chargement de menu.html :", error);
     });
 });
