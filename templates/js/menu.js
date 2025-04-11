@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("menu-container");
 
   // Charger dynamiquement le fichier menu.html
@@ -23,4 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((error) => {
       console.error("Erreur lors du chargement de menu.html :", error);
     });
+});*/
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("menu");
+
+  burger.addEventListener("click", function () {
+    menu.classList.toggle("open");
+  });
 });
+
