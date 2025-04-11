@@ -56,3 +56,43 @@ footer {
   padding: 1em;
   margin-top: 2em;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+  }
+
+  header, footer {
+    background-color: #333;
+    color: #fff;
+  }
+
+  nav a {
+    color: #f5f5f5;
+  }
+
+  .hero {
+    background-image: url('https://via.placeholder.com/1200x300.png?text=Site+Test+Dark');
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  .produit {
+    display: block;
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  .hero {
+    padding: 2em 1em;
+    background-size: cover;
+  }
+}
+
