@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: #5c3b00;
+  color: white;
   padding: 10px;
 }
 
@@ -31,35 +32,28 @@
 }
 
 .nav-links li {
-  border: black solid 2px;
+  border: white solid 2px;
   border-radius: 10rem;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #007BFF;
-}
-
-.nav-links li {
-  border: black solid 2px;
-  border-radius: 10rem;
-  transition: all 0.3s ease; /* Pour une transition douce */
+  color: #946d2b;
 }
 
 /* Changer la couleur du lien et de la bordure active */
 .nav-links a.active {
-  background-color: #007BFF; /* Couleur de fond active */
-  color: white; /* Texte blanc pour l'élément actif */
+  color: #946d2b; /* Texte blanc pour l'élément actif */
 }
 
 .nav-links li a.active {
-  border-color: #007BFF; /* Changer la couleur de la bordure quand actif */
+  border-color: #946d2b; /* Changer la couleur de la bordure quand actif */
 }
 
 /* --- Responsive --- */
@@ -89,7 +83,8 @@
     position: absolute;
     top: 60px;
     right: 20px;
-    background:#f3f3f3;
+    background:#5c3b00;
+    color: white;
     padding:10px;
     border-radius:5px;
   }
