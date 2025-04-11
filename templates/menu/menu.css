@@ -41,9 +41,10 @@
   color: white;
   font-weight: 500;
   transition: color 0.3s;
+  margin: 5px;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .nav-links li:hover {
   color: #946d2b;
 }
 
@@ -83,7 +84,7 @@
     position: absolute;
     top: 60px;
     right: 20px;
-    background:#5c3b00;
+    background:#5c3a0075;
     color: white;
     padding:10px;
     border-radius:5px;
