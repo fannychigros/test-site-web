@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("menu-container");
 
   // Chargement du fichier menu.html
-  fetch("/html/menu.html")
+  fetch("/templates/html/menu.html")
     .then((response) => response.text())
     .then((html) => {
       container.insertAdjacentHTML("beforeend", html);  // Insérer le HTML de menu.html
