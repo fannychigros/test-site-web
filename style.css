@@ -57,6 +57,13 @@ footer {
   margin-top: 2em;
 }
 
+.contenu {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+
 /*@media (prefers-color-scheme: dark) {
   body {
     background-color: #1e1e1e;
