@@ -1,0 +1,52 @@
+.menu-container {
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+}
+
+/* Menu horizontal par défaut */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+/* Cacher la case à cocher */
+#menu-toggle {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #ffcc00;
+    padding: 1em 0;
+  }
+
+  .menu a {
+    padding: 0.5em;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  
+}
