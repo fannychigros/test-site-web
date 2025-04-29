@@ -136,6 +136,22 @@ iframe {
   background-color: #704a05;
 }
 
+/* Section Produits */
+.images-produits {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.images-produits img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 768px) {
   .lieux-container {
     flex-direction: column;
