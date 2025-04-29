@@ -36,6 +36,7 @@ section {
   border-radius: 2rem;
   padding: 2rem;
   box-sizing: border-box;
+  height: fit-content;
 }
 
 .colonne h3 {
