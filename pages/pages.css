@@ -83,14 +83,49 @@ section {
 }
 
 .map-container {
-  flex: 2; /* Prend l'espace disponible sur la droite */
+  flex: 1; /* Prend l'espace disponible sur la droite */
 }
 
 /* Styles de la carte */
 iframe {
-  width: 100%;
   border-radius: 0.5rem; /* Bord arrondi pour la carte */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre autour de la carte */
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background: #f9f4e9;
+  padding: 2em;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  font-size: 1em;
+  background: #fff;
+}
+
+.contact-form button {
+  background-color: #5c3b00;
+  color: white;
+  border: none;
+  padding: 0.8em 1.2em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #704a05;
 }
 
 @media screen and (max-width: 768px) {
