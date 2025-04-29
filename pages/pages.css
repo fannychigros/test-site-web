@@ -82,14 +82,12 @@ section {
 }
 
 .map-container {
-  flex: 1; /* Prend l'espace disponible sur la droite */
-  max-width: 600px; /* Limite la largeur de la carte */
+  flex: 2; /* Prend l'espace disponible sur la droite */
 }
 
 /* Styles de la carte */
 iframe {
   width: 100%;
-  height: 100%;
   border-radius: 0.5rem; /* Bord arrondi pour la carte */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre autour de la carte */
 }
