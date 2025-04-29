@@ -7,24 +7,6 @@ body {
   color: #5c3b00;
 }
 
-.hero {
-  background-size: cover;
-  color: #5c3b00;
-  text-align: center;
-  padding: 4em 2em;
-}
-
-.produit {
-  display: inline-block;
-  width: 45%;
-  margin: 1em;
-  text-align: center;
-}
-
-.produit img {
-  max-width: 100%;
-}
-
 footer {
   background-color: #5c3b00;
   text-align: center;
@@ -39,34 +21,48 @@ section {
   padding: 0 1em;
 }
 
-.columns {
+.lieux-container {
   display: flex;
   gap: 3rem;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.column {
-  flex: 1;
-  min-width: 280px;
-  padding: 2.5%;
+.colonne {
+  flex: 1 1 45%;
   background-color: beige;
   border-radius: 2rem;
+  padding: 2rem;
   box-sizing: border-box;
 }
 
-/* Responsive */
+.colonne h3 {
+  margin-top: 0;
+  color: #5c3b00;
+}
+
+.evenement {
+  margin-bottom: 1.5rem;
+}
+
+.nom {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.lieu-date {
+  margin: 0.2rem 0 0.2rem 1rem;
+  font-style: italic;
+  color: #333;
+}
+
 @media screen and (max-width: 768px) {
-  .columns {
+  .lieux-container {
     flex-direction: column;
+    gap: 2rem;
   }
 
-  .hero {
-    padding: 2em 1em;
-  }
-
-  nav a {
-    display: block;
-    margin: 0.5em 0;
+  .colonne {
+    flex: 1 1 100%;
   }
 }
