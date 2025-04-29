@@ -33,4 +33,18 @@ fetch(menuPath)
         link.classList.add('active');
       }
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.querySelector(".submenu-toggle");
+      const submenu = document.querySelector(".submenu");
+    
+      if (toggle && submenu) {
+        toggle.addEventListener("click", (e) => {
+          if (window.innerWidth <= 768) {
+            e.preventDefault(); // bloque navigation vers produits.html
+            submenu.classList.toggle("open");
+          }
+        });
+      }
+    });
   });

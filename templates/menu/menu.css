@@ -104,6 +104,11 @@
   color: white;
 }
 
+.arrow {
+  display: none; /* masqué en grand écran */
+}
+
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .navbar {
@@ -175,4 +180,20 @@
   .has-submenu:hover .submenu {
     display: flex;
   }
+
+  .submenu {
+    display: none;
+  }
+
+  .submenu.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .arrow {
+    display: inline; /* visible uniquement sur mobile */
+    margin-left: 0.5rem;
+    font-size: 0.8em;
+  }
+  
 }
