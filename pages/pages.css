@@ -8,7 +8,6 @@ body {
 }
 
 .hero {
-
   background-size: cover;
   color: #5c3b00;
   text-align: center;
@@ -40,29 +39,34 @@ section {
   padding: 0 1em;
 }
 
-.ou-nous-trouver table td {
-  width: 50%;
+.columns {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
   padding: 2.5%;
-  vertical-align: top;
   background-color: beige;
   border-radius: 2rem;
+  box-sizing: border-box;
 }
 
-.ou-nous-trouver table {
-  border-collapse: separate;
-  border-spacing: 3rem 0;
-}
-
+/* Responsive */
 @media screen and (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 0.5em 0;
+  .columns {
+    flex-direction: column;
   }
 
   .hero {
     padding: 2em 1em;
-    background-size: cover;
   }
 
-  
+  nav a {
+    display: block;
+    margin: 0.5em 0;
+  }
 }
