@@ -35,16 +35,19 @@ fetch(menuPath)
     });
 
     document.addEventListener("DOMContentLoaded", () => {
-      const toggle = document.querySelector(".submenu-toggle");
-      const submenu = document.querySelector(".submenu");
+      const dropdowns = document.querySelectorAll(".dropdown");
     
-      if (toggle && submenu) {
-        toggle.addEventListener("click", (e) => {
-          if (window.innerWidth <= 768) {
-            e.preventDefault(); // bloque navigation vers produits.html
-            submenu.classList.toggle("open");
-          }
-        });
-      }
+      dropdowns.forEach(drop => {
+        const arrow = drop.querySelector(".arrow");
+    
+        if (arrow) {
+          arrow.addEventListener("click", e => {
+            e.preventDefault();
+            e.stopPropagation();
+            drop.classList.toggle("open");
+          });
+        }
+      });
     });
+    
   });

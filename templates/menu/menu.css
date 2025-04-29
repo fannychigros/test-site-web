@@ -69,9 +69,6 @@
 }
 
 /* Sous-menu (grands écrans) */
-.has-submenu:hover .submenu {
-  display: block;
-}
 
 .submenu {
   display: none;
@@ -105,9 +102,12 @@
 }
 
 .arrow {
-  display: none; /* masqué en grand écran */
+  display: none;
+  cursor: pointer;
+  margin-left: 5px;
+  color: white;
+  font-size: 1rem;
 }
-
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
@@ -164,36 +164,19 @@
   }
 
   /* Sous-menu (responsive) */
-  .has-submenu {
-    position: relative;
-  }
 
-  .has-submenu .submenu {
-    display: none;
-    flex-direction: column;
-    background-color: #5c3b00;
-    padding-left: 1rem;
-    margin-top: 5px;
-    border-radius: 0.5rem;
-  }
-
-  .has-submenu:hover .submenu {
-    display: flex;
+  .arrow {
+    display: inline;
   }
 
   .submenu {
     display: none;
-  }
-
-  .submenu.open {
-    display: flex;
     flex-direction: column;
+    padding-left: 10px;
   }
 
-  .arrow {
-    display: inline; /* visible uniquement sur mobile */
-    margin-left: 0.5rem;
-    font-size: 0.8em;
+  .dropdown.open .submenu {
+    display: flex;
   }
   
 }
