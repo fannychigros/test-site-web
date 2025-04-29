@@ -140,7 +140,7 @@ iframe {
 .images-produits {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem 7rem;
   flex-wrap: wrap;
   margin-bottom: 2em;
 }

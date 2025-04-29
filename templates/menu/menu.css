@@ -6,8 +6,7 @@
   background-color: #5c3b00;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #4b3102 100%), url(../../img/img_miel_confiture.png);
   color: #5c3b00;
-  padding:
-10px;
+  padding: 10px;
   height: 25rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +29,7 @@
   display: none;
 }
 
-/* Liens horizontaux pour les grands écrans */
+/* Liens horizontaux */
 .nav-links {
   display: flex;
   gap: 20px;
@@ -39,9 +38,11 @@
   margin: 0;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .nav-links li {
+  position: relative;
   border: white solid 2px;
   border-radius: 10rem;
 }
@@ -52,36 +53,73 @@
   font-weight: 500;
   transition: color 0.3s;
   margin: 5px;
+  padding: 10px 16px;
+  display: block;
 }
 
-.nav-links a:hover, .nav-links li:hover {
+.nav-links a:hover,
+.nav-links li:hover > a {
   color: #946d2b;
 }
 
-/* Changer la couleur du lien et de la bordure active */
+/* Active */
 .nav-links a.active {
-  color: #946d2b; /* Texte blanc pour l'élément actif */
+  color: #946d2b;
+}
+.nav-links li a.active {
+  border-color: #946d2b;
 }
 
-.nav-links li a.active {
-  border-color: #946d2b; /* Changer la couleur de la bordure quand actif */
+/* Sous-menu (grands écrans) */
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #5c3b00;
+  border-radius: 1rem;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 180px;
+  z-index: 10;
+}
+
+.submenu li {
+  border: none;
+  padding: 0;
+}
+
+.submenu a {
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 0;
+}
+
+.submenu a:hover {
+  background-color: #704a05;
+  color: white;
 }
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .navbar {
-    display: flex; /* Affichage en ligne */
-    flex-direction: row; /* Alignement des éléments sur une ligne */
-    justify-content: space-between; /* Titre et burger séparés */
-    align-items: center; /* Centrer verticalement */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: auto;
     min-height: 100px;
   }
 
   .logo {
-    margin-bottom: 0; /* Pas d'espace sous le logo */
+    margin-bottom: 0;
   }
-
 
   .logo a {
     font-size: 2rem;
@@ -91,20 +129,22 @@
     display: block;
     font-size: 24px;
     cursor: pointer;
+    margin-right: 1rem;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
     margin-top: 10px;
-    gap:10px;
+    gap: 10px;
     position: absolute;
     top: 60px;
     right: 20px;
-    background:#5c3a0075;
+    background: #5c3a0075;
     color: white;
-    padding:10px;
-    border-radius:5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
   }
 
   .menu-toggle:checked + .hamburger + .nav-links {
@@ -115,10 +155,27 @@
     padding: 10px 0;
     border: none;
     border-radius: none;
-    transition: none;
   }
 
   .nav-links a {
     padding-left: 10px;
+  }
+
+  /* Sous-menu (responsive) */
+  .has-submenu {
+    position: relative;
+  }
+
+  .has-submenu .submenu {
+    display: none;
+    flex-direction: column;
+    background-color: #5c3b00;
+    padding-left: 1rem;
+    margin-top: 5px;
+    border-radius: 0.5rem;
+  }
+
+  .has-submenu:hover .submenu {
+    display: flex;
   }
 }
