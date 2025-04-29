@@ -101,6 +101,10 @@
   color: white;
 }
 
+.dropdown:hover .submenu {
+  display: block;
+}
+
 .arrow {
   display: none;
   cursor: pointer;

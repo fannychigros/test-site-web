@@ -34,20 +34,20 @@ fetch(menuPath)
       }
     });
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const dropdowns = document.querySelectorAll(".dropdown");
-    
-      dropdowns.forEach(drop => {
-        const arrow = drop.querySelector(".arrow");
-    
-        if (arrow) {
-          arrow.addEventListener("click", e => {
-            e.preventDefault();
-            e.stopPropagation();
-            drop.classList.toggle("open");
-          });
-        }
-      });
+    // Juste après avoir injecté le HTML du menu :
+    const dropdowns = document.querySelectorAll(".dropdown");
+
+    dropdowns.forEach(drop => {
+      const arrow = drop.querySelector(".arrow");
+
+      if (arrow) {
+        arrow.addEventListener("click", e => {
+          e.preventDefault();
+          e.stopPropagation();
+          drop.classList.toggle("open");
+        });
+      }
     });
+
     
   });
