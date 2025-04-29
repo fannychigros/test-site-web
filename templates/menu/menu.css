@@ -69,9 +69,11 @@
     flex-direction: row; /* Alignement des éléments sur une ligne */
     justify-content: space-between; /* Titre et burger séparés */
     align-items: center; /* Centrer verticalement */
+    height: auto;
   }
 
   .logo {
+    font-size: 2rem;
     margin-bottom: 0; /* Pas d'espace sous le logo */
   }
 
