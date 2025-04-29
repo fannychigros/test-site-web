@@ -75,6 +75,7 @@
     justify-content: space-between; /* Titre et burger séparés */
     align-items: center; /* Centrer verticalement */
     height: auto;
+    min-height: 100px;
   }
 
   .logo {

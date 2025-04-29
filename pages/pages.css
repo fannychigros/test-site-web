@@ -100,13 +100,13 @@ iframe {
 }
 
 .contact-form {
-  max-width: 600px;
+  max-width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1em;
-  background: #f9f4e9;
-  padding: 2em;
+  background: beige;
+  padding: 1em 2em;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
