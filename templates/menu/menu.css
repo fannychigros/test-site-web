@@ -4,16 +4,16 @@
   flex-direction: column;
   align-items: center;
   background-color: #5c3b00;
+  background-image: url(.../img/img_miel_confiture.png);
   color: white;
   padding: 10px;
-  height: 15rem;
+  height: 25rem;
 }
 
 .logo {
   font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  height: 80%;
 }
 
 /* Menu burger caché en grand écran */
