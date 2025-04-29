@@ -53,8 +53,6 @@
   font-weight: 500;
   transition: color 0.3s;
   margin: 5px;
-  padding: 10px 16px;
-  display: block;
 }
 
 .nav-links a:hover,
