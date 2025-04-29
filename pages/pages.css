@@ -79,6 +79,13 @@ section {
 
 .contact-info {
   flex: 0.5; /* Prend l'espace disponible sur la gauche */
+}
+
+.contact-info-titre {
+  align-self: top;
+}
+
+.contact-info-text {
   align-self: center;
 }
 
