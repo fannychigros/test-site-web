@@ -41,6 +41,14 @@ section {
   color: #5c3b00;
 }
 
+.colonne h4 {
+  margin-top: 1.5rem;
+  color: #4a2e00;
+  border-bottom: 2px solid #c2a675;
+  padding-bottom: 0.3rem;
+}
+
+
 .evenement {
   margin-bottom: 1.5rem;
 }
