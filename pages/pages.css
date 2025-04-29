@@ -78,7 +78,8 @@ section {
 }
 
 .contact-info {
-  flex: 1; /* Prend l'espace disponible sur la gauche */
+  flex: 0.5; /* Prend l'espace disponible sur la gauche */
+  align-self: center;
 }
 
 .map-container {
