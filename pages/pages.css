@@ -40,6 +40,11 @@ section {
   padding: 0 1em;
 }
 
+.ou-nous-trouver > td {
+  width: 50%;
+  padding: 2.5%;
+}
+
 
 @media screen and (max-width: 768px) {
   nav a {
