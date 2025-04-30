@@ -1,13 +1,13 @@
 // Récupération dynamique du chemin vers le dossier racine du site (nom du repo)
-const pathParts = window.location.pathname.split('/');
-const repoName = pathParts[1]; // 'test-site-web' par exemple
-const siteRoot = '/' + repoName + '/';
+const footerPathParts = window.location.pathname.split('/');
+const footerRepoName = footerPathParts[1]; // 'test-site-web' par exemple
+const footerSiteRoot = '/' + footerRepoName + '/';
 
 // Construction du bon chemin vers le footer.html
-const footerPath = siteRoot + 'templates/footer/footer.html';
+const footerPath = footerSiteRoot + 'templates/footer/footer.html';
 
 // Injection du menu
-fetch(menuPath)
+fetch(footerPath)
   .then(response => response.text())
   .then(html => {
     document.getElementById('footer-container').innerHTML = html;
