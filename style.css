@@ -31,6 +31,10 @@ section {
   padding: 0 1em;
 }
 
+h1, h2, h3 {
+  font-family: 'Ballantines';
+}
+
 @media screen and (max-width: 768px) {
  
   nav a {
