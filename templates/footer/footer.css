@@ -6,6 +6,8 @@ footer {
     color: white;
   }
 footer > p {
-    font-size: x-small;
+    font-size: larger;
     font-family: 'Ballantines';
+    padding: 0;
+    margin: 0;
 }
