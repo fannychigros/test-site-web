@@ -20,6 +20,10 @@ fetch(menuPath)
     if (currentPath.startsWith(siteRoot + 'pages/')) {
       prefix = '../';
     }
+    if (currentPath.startsWith(siteRoot + 'pages/produits/')) {
+      prefix = '../../';
+    }
+    
 
     // 🔗 Corriger tous les <a data-link> dynamiquement
     document.querySelectorAll('#menu-container a[data-link]').forEach(link => {
