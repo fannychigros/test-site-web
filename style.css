@@ -2,3 +2,57 @@
   font-family: 'Ballantines';
   src: url('fonts/Ballantines Script EF Bold.ttf') format('truetype');
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #5c3b00;
+}
+
+.hero {
+  background-size: cover;
+  color: #5c3b00;
+  text-align: center;
+  padding: 4em 2em;
+}
+
+.produit {
+  display: inline-block;
+  width: 45%;
+  margin: 1em;
+  text-align: center;
+}
+
+.produit img {
+  max-width: 100%;
+}
+ 
+footer {
+  background-color: #5c3b00;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+  color: white;
+}
+
+section {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+@media screen and (max-width: 768px) {
+ 
+  nav a {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  .hero {
+    padding: 2em 1em;
+    background-size: cover;
+  }
+}
