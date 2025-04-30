@@ -5,3 +5,7 @@ footer {
     margin-top: 2em;
     color: white;
   }
+footer > p {
+    font-size: x-small;
+    font-family: 'Ballantines';
+}
