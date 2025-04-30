@@ -64,6 +64,19 @@ section {
   color: #333;
 }
 
+.ou-nous-trouver .lieux-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de même largeur */
+  gap: 2rem;
+}
+
+.ou-nous-trouver .colonne {
+  background-color: beige;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
 
 /* Section Contact */
 .contact {
@@ -122,6 +135,10 @@ iframe {
 
   .colonne {
     flex: 1 1 100%;
+  }
+
+  .ou-nous-trouver .lieux-container {
+    grid-template-columns: 1fr; /* une seule colonne */
   }
 
   .contact {
