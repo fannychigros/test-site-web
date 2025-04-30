@@ -50,8 +50,19 @@ section {
 
 
 .evenement {
-  margin-bottom: 1.5rem;
+  background-color: #fff8e1;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
+
+
+.evenement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
 
 .nom {
   font-weight: bold;
@@ -62,19 +73,6 @@ section {
   margin: 0.2rem 0 0.2rem 1rem;
   font-style: italic;
   color: #333;
-}
-
-.ou-nous-trouver .lieux-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de même largeur */
-  gap: 2rem;
-}
-
-.ou-nous-trouver .colonne {
-  background-color: beige;
-  border-radius: 2rem;
-  padding: 2rem;
-  box-sizing: border-box;
 }
 
 
@@ -137,8 +135,8 @@ iframe {
     flex: 1 1 100%;
   }
 
-  .ou-nous-trouver .lieux-container {
-    grid-template-columns: 1fr; /* une seule colonne */
+  .evenement-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact {
