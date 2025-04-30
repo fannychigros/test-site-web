@@ -125,6 +125,10 @@ iframe {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Ballantines';
+}
+
 @media screen and (max-width: 768px) {
   .lieux-container {
     flex-direction: column;
