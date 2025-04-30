@@ -24,19 +24,16 @@ section {
 /* Section Ou nous trouver */
 
 .lieux-container {
-  display: flex;
-  gap: 3rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
 }
 
+
 .colonne {
-  flex: 1 1 45%;
   background-color: beige;
   border-radius: 2rem;
   padding: 2rem;
   box-sizing: border-box;
-  height: fit-content;
+  margin-bottom: 2rem;
 }
 
 .colonne h3 {
